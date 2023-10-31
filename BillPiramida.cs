@@ -28,7 +28,7 @@ namespace figures
                 return (1.0 / 3) * area() * h;
             }
 
-            public new void Out()
+            public override void Out()
             {
                 Console.WriteLine($"Полная площадь поверхности пирамиды: {lateralSurfaceArea():f3}");
                 Console.WriteLine($"Периметр основания пирамиды: {perimeter():f3}");

@@ -30,7 +30,7 @@ namespace figures
                 return (1.0 / 3) * area() * h;
             }
 
-            public new void Out()
+            public override void Out()
             {
                 Console.WriteLine("Радиус Михаила(Круга) " + radius);
                 Console.WriteLine($"Полная площадь поверхности конуса: {total_surface_area():f3}");

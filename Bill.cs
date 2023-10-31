@@ -75,7 +75,7 @@ namespace figures
                 return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
             }
 
-            public void Out()
+            public virtual void Out()
             {
                 Console.WriteLine($"Треугольник со сторонами {a}, {b}, {c} является {get_type()}.");
                 Console.WriteLine($"Площадь треугольника: {area():f3}");

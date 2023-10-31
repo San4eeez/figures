@@ -26,7 +26,7 @@ namespace figures
             return (a * a);
         }
 
-        public void Out()
+        public virtual void Out()
         {
             Console.WriteLine($"Квадрат со сторонами {a}");
             Console.WriteLine($"Площадь квадрата: {area():f3}");

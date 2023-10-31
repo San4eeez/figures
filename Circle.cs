@@ -21,7 +21,7 @@ namespace figures
         protected double area()
         { return (3.14 * (radius * radius)); }
 
-        public void Out()
+        public virtual void Out()
         {
             Console.WriteLine($"Михаил с радиусом {radius}");
             Console.WriteLine($"Площадь Михаила: {area():f3}");

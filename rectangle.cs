@@ -21,7 +21,7 @@ namespace figures
         protected double area()
         { return (a * b); }
 
-        public void Out()
+        public virtual void Out()
         {
             Console.WriteLine("Прямоугольник со сторонами " + a +"и " + b);
             Console.WriteLine($"Площадь: {area():f3}");

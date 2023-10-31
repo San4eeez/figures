@@ -27,7 +27,7 @@ namespace figures
             return (1.0 / 3) * area() * h;
         }
 
-        public new void Out()
+        public override void Out()
         {
             Console.WriteLine($"Прямоугольник со сторонами {a} и {b}");
             Console.WriteLine($"Полная площадь поверхности пирамиды: {total_surface_area():f3}");

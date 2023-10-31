@@ -29,7 +29,7 @@ namespace figures
             return (1.0 / 3) * area() * h;
         }
 
-        public new void Out()
+        public override void Out()
         {
             Console.WriteLine("Для пирамиды с основанием квадратик имеющим стороны "+a);
             Console.WriteLine($"Площадь поверхности пирамиды: {total_surface_area():f3}");
