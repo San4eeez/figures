@@ -1,30 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pramo
+namespace figures
 {
     internal class Rectangle
     {
-        private float a;
-        private float b;
+        protected double a;
+        protected double b;
 
-
-        public void Perimetr(float a, float b)
+        public Rectangle(double a, double b)
         {
             this.a = a;
             this.b = b;
-            float p = (a + b) * 2;
-            Console.WriteLine($"Для прямоугольника со сторонами {a} и {b}\nПериметр: {p}"); ;
         }
-        public void Ploshad(float a, float b)
+
+        protected double peri()
+        { return ((a+b)*2); }
+
+        protected double area()
+        { return (a * b); }
+
+        public void Out()
         {
-            this.a = a;
-            this.b = b;
-            float s = a * b;
-            Console.WriteLine($"Для прямоугольника со сторонами {a} и {b}\nПлощадь: {s}");
+            Console.WriteLine("Прямоугольник со сторонами " + a +"и " + b);
+            Console.WriteLine($"Площадь: {area():f3}");
+            Console.WriteLine($"Периметр:  {peri():f3}");
         }
 
 

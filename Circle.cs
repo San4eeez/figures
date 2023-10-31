@@ -4,25 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mihail
+namespace figures
 {
-    internal class Circle
+    class Circle
     {
-        private float r;
-        public void Perimetr(float r)
+        protected double radius;
+
+        public Circle(double radius)
         {
-            this.r += r;
-            double p = 2 * Math.PI * r;
-            Console.WriteLine($"Радиус {r}, а его периметр: {p}");
+            this.radius = radius;
         }
 
-        public void Ploshad(float r)
+        protected double perimeter()
+        { return (2 * 3.14 * radius); }
+
+        protected double area()
+        { return (3.14 * (radius * radius)); }
+
+        public void Out()
         {
-            this.r += r;
-            double s = Math.PI * Math.Pow(r, 2);
-            Console.WriteLine($"Радиус {r}, а его площадь: {s}");
+            Console.WriteLine($"Михаил с радиусом {radius}");
+            Console.WriteLine($"Площадь Михаила: {area():f3}");
+            Console.WriteLine($"Периметр Михаила: {perimeter():f3}");
         }
     }
 }
-
 //Владимирский централ, ветер северный...
